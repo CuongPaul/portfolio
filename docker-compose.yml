@@ -4,7 +4,7 @@ services:
   frontend:
     image: portfolio-frontend
     build:
-      context: ./
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "3000:80"
@@ -13,8 +13,8 @@ services:
   backend:
     image: portfolio-backend
     build:
-      context: ./server
+      context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "4000:4000"
     restart: unless-stopped

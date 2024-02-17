@@ -26,11 +26,14 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
 
-    const response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      body: JSON.stringify(formDetails),
-      headers: { "Content-Type": "application/json;charset=utf-8" },
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_API_BASE_URL}/contact`,
+      {
+        method: "POST",
+        body: JSON.stringify(formDetails),
+        headers: { "Content-Type": "application/json;charset=utf-8" },
+      }
+    );
     let result = await response.json();
 
     setButtonText("Send");
