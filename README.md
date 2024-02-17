@@ -13,7 +13,7 @@ Built using:
 
 You can run:
 
-### `npm serve`
+### `cd server && npm start`
 
 Runs the server to receive info contact.\
 Open [http://localhost:5000](http://localhost:5000) to test connection.
