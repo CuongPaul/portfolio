@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import MyResume from "../assets/pdf/Full-Stack_Developer-Vuong_Ta_Cuong.pdf";
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -84,9 +85,14 @@ export const NavBar = () => {
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
-              <HashLink to="#connect">
+              <HashLink
+                to={MyResume}
+                target="_blank"
+                rel="noreferrer"
+                download="Full-Stack_Developer-Vuong_Ta_Cuong"
+              >
                 <button className="vvd">
-                  <span>Let’s Connect</span>
+                  <span>My Resume</span>
                 </button>
               </HashLink>
             </span>

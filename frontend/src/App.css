@@ -172,6 +172,7 @@ span.navbar-text {
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .navbar-text button span {
   z-index: 1;
@@ -186,6 +187,7 @@ span.navbar-text {
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .navbar-text button:hover {
   color: #121212;
@@ -264,6 +266,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  border-radius: 5px;
 }
 .banner h1 {
   font-size: 65px;
@@ -535,6 +538,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .contact form button span {
   z-index: 1;
@@ -553,6 +557,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 10px;
 }
 .contact form button:hover::before {
   width: 100%;
