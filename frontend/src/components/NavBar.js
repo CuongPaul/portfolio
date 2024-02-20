@@ -4,9 +4,18 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import skype from "../assets/img/skype.svg";
+import slack from "../assets/img/slack.svg";
+import github from "../assets/img/github.svg";
+import reddit from "../assets/img/reddit.svg";
+import tiktok from "../assets/img/tiktok.svg";
+import discord from "../assets/img/discord.svg";
+import youtube from "../assets/img/youtube.svg";
+import twitter from "../assets/img/twitter.svg";
+import linkedin from "../assets/img/linkedin.svg";
+import facebook from "../assets/img/facebook.svg";
+import telegram from "../assets/img/telegram.svg";
+import instagram from "../assets/img/instagram.svg";
 import MyResume from "../assets/pdf/Full-Stack_Developer-Vuong_Ta_Cuong.pdf";
 
 export const NavBar = () => {
@@ -76,13 +85,40 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="#">
-                  <img src={navIcon1} alt="" />
+                  <img src={linkedin} alt="" />
                 </a>
                 <a href="#">
-                  <img src={navIcon2} alt="" />
+                  <img src={slack} alt="" />
                 </a>
                 <a href="#">
-                  <img src={navIcon3} alt="" />
+                  <img src={discord} alt="" />
+                </a>
+                <a href="#">
+                  <img src={telegram} alt="" />
+                </a>
+                <a href="#">
+                  <img src={skype} alt="" />
+                </a>
+                <a href="#">
+                  <img src={github} alt="" />
+                </a>
+                <a href="#">
+                  <img src={reddit} alt="" />
+                </a>
+                <a href="#">
+                  <img src={facebook} alt="" />
+                </a>
+                <a href="#">
+                  <img src={instagram} alt="" />
+                </a>
+                <a href="#">
+                  <img src={twitter} alt="" />
+                </a>
+                <a href="#">
+                  <img src={tiktok} alt="" />
+                </a>
+                <a href="#">
+                  <img src={youtube} alt="" />
                 </a>
               </div>
               <HashLink
