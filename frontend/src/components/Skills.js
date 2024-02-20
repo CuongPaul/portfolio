@@ -1,9 +1,16 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import css3 from "../assets/img/css3.svg";
+import html5 from "../assets/img/html5.svg";
+import react from "../assets/img/react.svg";
+import redis from "../assets/img/redis.svg";
+import docker from "../assets/img/docker.svg";
+import nestjs from "../assets/img/nestjs.svg";
+import mongodb from "../assets/img/mongodb.svg";
+import javascript from "../assets/img/javascript.svg";
+import postgresql from "../assets/img/postgresql.svg";
+import typescript from "../assets/img/typescript.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -44,20 +51,44 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={html5} alt="Image" />
+                  <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <img src={css3} alt="Image" />
+                  <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <img src={javascript} alt="Image" />
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={typescript} alt="Image" />
+                  <h5>Typescript</h5>
+                </div>
+                <div className="item">
+                  <img src={react} alt="Image" />
+                  <h5>React</h5>
+                </div>
+                <div className="item">
+                  <img src={nestjs} alt="Image" />
+                  <h5>NestJS</h5>
+                </div>
+                <div className="item">
+                  <img src={postgresql} alt="Image" />
+                  <h5>PostgreSQL</h5>
+                </div>
+                <div className="item">
+                  <img src={mongodb} alt="Image" />
+                  <h5>MongoDB</h5>
+                </div>
+                <div className="item">
+                  <img src={redis} alt="Image" />
+                  <h5>Redis</h5>
+                </div>
+                <div className="item">
+                  <img src={docker} alt="Image" />
+                  <h5>Docker</h5>
                 </div>
               </Carousel>
             </div>
