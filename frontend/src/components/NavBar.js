@@ -4,18 +4,18 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // import logo from "../assets/img/logo.svg";
-import skype from "../assets/img/skype.svg";
-import slack from "../assets/img/slack.svg";
-import github from "../assets/img/github.svg";
-import reddit from "../assets/img/reddit.svg";
-import tiktok from "../assets/img/tiktok.svg";
-import discord from "../assets/img/discord.svg";
-import youtube from "../assets/img/youtube.svg";
-import twitter from "../assets/img/twitter.svg";
-import linkedin from "../assets/img/linkedin.svg";
-import facebook from "../assets/img/facebook.svg";
-import telegram from "../assets/img/telegram.svg";
-import instagram from "../assets/img/instagram.svg";
+// import skype from "../assets/img/skype.svg";
+// import slack from "../assets/img/slack.svg";
+// import github from "../assets/img/github.svg";
+// import reddit from "../assets/img/reddit.svg";
+// import tiktok from "../assets/img/tiktok.svg";
+// import discord from "../assets/img/discord.svg";
+// import youtube from "../assets/img/youtube.svg";
+// import twitter from "../assets/img/twitter.svg";
+// import linkedin from "../assets/img/linkedin.svg";
+// import facebook from "../assets/img/facebook.svg";
+// import telegram from "../assets/img/telegram.svg";
+// import instagram from "../assets/img/instagram.svg";
 import MyResume from "../assets/pdf/Full-Stack_Developer-Vuong_Ta_Cuong.pdf";
 
 export const NavBar = () => {
@@ -83,7 +83,7 @@ export const NavBar = () => {
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <div className="social-icon">
+              {/* <div className="social-icon">
                 <a href="#">
                   <img src={linkedin} alt="" />
                 </a>
@@ -120,7 +120,7 @@ export const NavBar = () => {
                 <a href="#">
                   <img src={youtube} alt="" />
                 </a>
-              </div>
+              </div> */}
               <HashLink
                 to={MyResume}
                 target="_blank"
