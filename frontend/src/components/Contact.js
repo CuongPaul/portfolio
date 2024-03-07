@@ -26,14 +26,11 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
 
-    const response = await fetch(
-      `${process.env.REACT_APP_API_BASE_URL}/contact`,
-      {
-        method: "POST",
-        body: JSON.stringify(formDetails),
-        headers: { "Content-Type": "application/json;charset=utf-8" },
-      }
-    );
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
+      method: "POST",
+      body: JSON.stringify(formDetails),
+      headers: { "Content-Type": "application/json;charset=utf-8" },
+    });
     let result = await response.json();
 
     setButtonText("Send");
@@ -114,7 +111,7 @@ export const Contact = () => {
                         <input
                           type="tel"
                           value={formDetails.phone}
-                          placeholder="Phone No."
+                          placeholder="Phone Nunber"
                           onChange={(e) =>
                             onFormUpdate("phone", e.target.value)
                           }

@@ -1,43 +1,64 @@
 import "animate.css";
+import TrackVisibility from "react-on-screen";
 import { Col, Row, Container } from "react-bootstrap";
 
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import spenmo from "../assets/img/spenmo.avif";
+import wifiCaPhe from "../assets/img/wifi-ca-phe.png";
+import storeLocator from "../assets/img/store-locator.webp";
+import variantsOptions from "../assets/img/variants-options.webp";
+import labelsAndBadges from "../assets/img/labels-and-badges.webp";
+import socialNetworkWebsite from "../assets/img/social-network-website.webp";
 
 export const Projects = () => {
   const projects = [
     {
-      imgUrl: projImg1,
-      title: "Business Startup",
-      description: "Design & Development",
+      time: "2021 - 2022",
+      imgUrl: labelsAndBadges,
+      title: "Product Labels & Badges",
+      description:
+        "BSS Product Labels & Badges helps you motivate customers to purchase more with catchy labels and badges",
+      link: "https://apps.shopify.com/product-labels-by-bss?surface_intra_position=1&surface_type=partners&surface_version=redesign",
     },
     {
-      imgUrl: projImg2,
-      title: "Business Startup",
-      description: "Design & Development",
+      time: "2021 - 2022",
+      imgUrl: storeLocator,
+      title: "Dealer & Store Locator",
+      description:
+        "MAPPY allows you to add store locations individually or in bulk with CSV file",
+      link: "https://apps.shopify.com/dealer-store-locator?surface_intra_position=6&surface_type=partners&surface_version=redesign",
     },
     {
-      imgUrl: projImg3,
-      title: "Business Startup",
-      description: "Design & Development",
+      time: "2021 - 2022",
+      imgUrl: variantsOptions,
+      title: "Product Variants Options",
+      description:
+        "Product Variants & Options is an all-in-one customization solution that helps B2B and B2C businesses grow",
+      link: "https://apps.shopify.com/product-options-by-bss?surface_intra_position=3&surface_type=partners&surface_version=redesign",
     },
     {
-      imgUrl: projImg1,
-      title: "Business Startup",
-      description: "Design & Development",
+      time: "2022",
+      imgUrl: spenmo,
+      title: "Spenmo",
+      link: "https://spenmo.com",
+      description:
+        "Spenmo is a spend management platform with smart corporate cards and AP automation to help businesses gain control and visibility over spending",
     },
     {
-      imgUrl: projImg2,
-      title: "Business Startup",
-      description: "Design & Development",
+      imgUrl: wifiCaPhe,
+      time: "2022 - 2023",
+      title: "Wifi Cà Phê",
+      link: "https://wificaphe.com",
+      description:
+        "Wifi Coffee is a tool to help order and pay at cafes, restaurants, and stores",
     },
     {
-      imgUrl: projImg3,
-      title: "Business Startup",
-      description: "Design & Development",
+      time: "2023",
+      imgUrl: socialNetworkWebsite,
+      title: "Fansipan Social Network",
+      link: "https://fansipan.onrender.com",
+      description:
+        "A social media platform allows users to create profiles, connect with friends and family, share updates, photos, videos, and links, join chat groups, and follow people of interest",
     },
   ];
 
@@ -46,24 +67,26 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <div>
-              <h2>Projects</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-              <Row>
-                {projects.map((project, index) => {
-                  return <ProjectCard key={index} {...project} />;
-                })}
-              </Row>
-            </div>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>Some Things I've built so far</p>
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   );
 };

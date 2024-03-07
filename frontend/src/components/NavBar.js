@@ -136,7 +136,7 @@ export const NavBar = () => {
                 to={MyResume}
                 target="_blank"
                 rel="noreferrer"
-                download="Full-Stack_Developer-Vuong_Ta_Cuong"
+                // download="Full-Stack_Developer-Vuong_Ta_Cuong"
               >
                 <button className="vvd">
                   <span>My Resume</span>

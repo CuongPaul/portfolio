@@ -8,7 +8,7 @@ import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
   const period = 2000;
-  const toRotate = ["Hi! I'm Cuong Vuong Software Engineer"];
+  const toRotate = ["Hello 👋, I'm Ta Cuong, Software Engineer"];
 
   const [text, setText] = useState("");
   const [loopNum, setLoopNum] = useState(0);
@@ -66,11 +66,15 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Be a logical, process-focused person with a pragmatic
+                    approach to problem-solving and motivated to get things
+                    done, even in stressful environments. With nearly 3 years of
+                    experience in programming on many technologies with
+                    different projects. In addition, I am an inquisitive person,
+                    like to take on challenges, and really care about
+                    implementing and designing large systems. In the long term,
+                    I want to try new situations and increase my skills and
+                    experience
                   </p>
                   <Nav.Link href="#contact">
                     <button>

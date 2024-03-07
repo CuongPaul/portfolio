@@ -1,34 +1,54 @@
 # Personal Portfolio Website
 
+[Demo](https://portfolio-tacuong.onrender.com)
+
 ![project overview](./images/project-overview.png)
 
-Built using:
+## Tech stack
 
-- Frontend library: ReactJS
-- Backend library: ExpressJS
+- Node: 21.1.0
+- Frontend: ReactJS
+- Backend: ExpressJS
 
-You can run:
+## Deploy app to production
 
-## Backend
+### 1. Create a [Render](https://dashboard.render.com) account
 
-```
-cd backend && npm run dev
-```
+Render account is used to create API server and Static site. Link to Github account to deploy repository
 
-Runs the server in the development mode to receive info contact.\
-Open [http://localhost:4000](http://localhost:4000) to test connection.
+### 2. Create a [Web Service](https://dashboard.render.com/create?type=web)
 
-The server will reload when you make changes.\
-You may also see any lint errors in the console.
+This is an API server
 
-## Frontend
+- Enter name of web service
 
-```
-cd frontend && npm run start
-```
+- Select region **_Singapore (Southest Asia)_**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Select branch **_main_**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- In the Root Directory section fill **_./backend_**
+
+- In the Runtime section select **_Docker_**
+
+- Add environment variables just like the [.env.example](./backend/.env.example) file
+
+### 3. Create a [Static Site](https://dashboard.render.com/select-repo?type=static)
+
+It is an user interface.
+
+- Enter name of static site
+
+- Select branch **_main_**
+
+- In the Root Directory section fill **_./frontend_**
+
+- In the Build Command section fill **_npm run build_**
+
+- In the Publish directory section fill **_build_**
+
+- In the Environment Variables section add **_NODE_VERSION = 21.1.0_** and add more environment variables just like the [.env.example](./frontend/.env.example) file
+
+## UI library
+
+- [Icons](https://fontawesome.com/search)
+- [Components](https://v4.mui.com/)

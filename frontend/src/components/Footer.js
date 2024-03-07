@@ -63,7 +63,6 @@ export const Footer = () => {
                 <img src={youtube} alt="" />
               </a>
             </div>
-            <p>Copyright 2024. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
