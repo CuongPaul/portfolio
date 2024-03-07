@@ -16,7 +16,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 // import facebook from "../assets/img/facebook.svg";
 // import telegram from "../assets/img/telegram.svg";
 // import instagram from "../assets/img/instagram.svg";
-import MyResume from "../assets/pdf/Full-Stack_Developer-Vuong_Ta_Cuong.pdf";
+import MyResume from "../assets/pdf/Software_Engineer-Vuong_Ta_Cuong.pdf";
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -136,7 +136,7 @@ export const NavBar = () => {
                 to={MyResume}
                 target="_blank"
                 rel="noreferrer"
-                // download="Full-Stack_Developer-Vuong_Ta_Cuong"
+                // download="Software_Engineer-Vuong_Ta_Cuong"
               >
                 <button className="vvd">
                   <span>My Resume</span>
