@@ -20,11 +20,18 @@ Render account is used to create API server and Static site. Link to Github acco
 
 This is an API server
 
+#### Create an application password on Google
+
+- Security -> How you sign in to Google -> 2-step verification -> Enable
+- Create an [application password](https://myaccount.google.com/u/1/apppasswords?utm_source=google-account&utm_medium=myaccountsecurity&utm_campaign=tsv-settings&rapt=AEjHL5Plx2bKft72Pe59WiQvx0cqln1Ie44-gwHxFt6186SNJ9JlO-TgS_LuFVj1tg3WMyBPip4C6eyYgmaOYmfIThFHUgTaEsaHdUorT_VugxnnwwqFHgg)
+
+#### Create API server on Render
+
 - Enter name of web service
 
 - Select region **_Singapore (Southest Asia)_**
 
-- Select branch **_main_**
+- Select branch **_master_**
 
 - In the Root Directory section fill **_./backend_**
 
@@ -38,7 +45,7 @@ It is an user interface.
 
 - Enter name of static site
 
-- Select branch **_main_**
+- Select branch **_master_**
 
 - In the Root Directory section fill **_./frontend_**
 
