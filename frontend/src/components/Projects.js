@@ -5,7 +5,9 @@ import { Col, Row, Container } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import spenmo from "../assets/img/spenmo.avif";
 import wifiCaPhe from "../assets/img/wifi-ca-phe.png";
+import indiseAppota from "../assets/img/indise-appota.webp";
 import storeLocator from "../assets/img/store-locator.webp";
+import hoanTienNgay from "../assets/img/hoan-tien-ngay.webp";
 import variantsOptions from "../assets/img/variants-options.webp";
 import labelsAndBadges from "../assets/img/labels-and-badges.webp";
 import socialNetworkWebsite from "../assets/img/social-network-website.webp";
@@ -59,6 +61,22 @@ export const Projects = () => {
       link: "https://fansipan.onrender.com",
       description:
         "A social media platform allows users to create profiles, connect with friends and family, share updates, photos, videos, and links, join chat groups, and follow people of interest",
+    },
+    {
+      time: "2024",
+      imgUrl: hoanTienNgay,
+      title: "Hoantienngay",
+      link: "https://hoantienngay.com",
+      description:
+        "Enables users to earn money back when shopping on e-commerce platforms. They can browse stores, make purchases, and receive a percentage of their spending as cashback. The site tracks transactions and displays earnings for easy payout.",
+    },
+    {
+      time: "2024",
+      imgUrl: indiseAppota,
+      title: "Inside Appota",
+      link: "https://inside.appota.com",
+      description:
+        "Website facilitates internal interactions among company employees. It provides a platform for communication, collaboration, and resource sharing, enhancing teamwork and productivity within the organization.",
     },
   ];
 

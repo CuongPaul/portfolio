@@ -433,6 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 .proj-card {
+  max-height: 250px;
   min-height: 250px;
   margin-bottom: 24px;
 }
@@ -444,6 +445,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx img {
   height: 100%;
+  object-fit: cover;
 }
 .proj-imgbx::before {
   content: "";
